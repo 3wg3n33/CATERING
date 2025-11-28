@@ -1,75 +1,37 @@
-:root{
-  --max-width:1100px;
-  --accent: #0066cc;
-  --bg: #f7f7f8;
-  --text:#111;
-  --muted:#666;
-  --radius:8px;
-  --gap:1rem;
-  --container-padding:1rem;
-  font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-  color-scheme: light;
-}
-*{box-sizing:border-box}
-html,body{height:100%}
-body{
-  margin:0;
-  color:var(--text);
-  background:var(--bg);
-  line-height:1.45;
-  -webkit-font-smoothing:antialiased;
-}
-.container{
-  max-width:var(--max-width);
-  margin:0 auto;
-  padding:var(--container-padding);
-}
-.header-inner{display:flex;align-items:center;justify-content:space-between;gap:var(--gap)}
-.logo{font-weight:700;text-decoration:none;color:var(--text);font-size:1.1rem}
-.nav{display:none}
-.nav ul{list-style:none;padding:0;margin:0;display:flex;gap:0.75rem}
-.nav a{text-decoration:none;color:var(--text);padding:0.5rem;border-radius:6px}
-.nav a:hover{background:#eee}
-.nav-toggle{background:transparent;border:0;font-size:1.25rem;padding:0.5rem;cursor:pointer}
+/* Ozadje strani */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
 
-.hero{
-  background:linear-gradient(180deg, white 0%, var(--bg) 100%);
-  padding:3rem 0;
-  text-align:center;
+    background-image: url("ozadje.jpg"); /* ime tvoje slike */
+    background-size: cover;     /* raztegne čez celo stran */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* da se ne premika */
+    
+    text-align: center; /* vsa vsebina na sredino */
+    color: white;       /* tekst bel, da se vidi */
 }
-.lead{color:var(--muted);margin-top:0.5rem}
-.btn{
-  display:inline-block;
-  background:var(--accent);
-  color:white;
-  padding:0.6rem 1rem;
-  text-decoration:none;
-  border-radius:6px;
-  border:0;
-  cursor:pointer;
-}
-.services{padding:2rem 0}
-.grid{display:grid;gap:1rem}
-.grid .card{background:white;padding:1rem;border-radius:var(--radius);box-shadow:0 1px 3px rgba(0,0,0,0.06)}
-.gallery-grid{grid-template-columns:repeat(3,1fr)}
-.img-placeholder{background:#e9e9ea;height:150px;display:flex;align-items:center;justify-content:center;border-radius:6px;color:var(--muted)}
-.contact{padding:2rem 0}
-label{display:block;margin-top:0.5rem;font-size:0.95rem}
-input,textarea{width:100%;padding:0.6rem;border-radius:6px;border:1px solid #ddd;margin-top:0.25rem}
-.form-actions{text-align:right;margin-top:0.5rem}
-.site-footer{padding:1rem 0;text-align:center;font-size:0.9rem;color:var(--muted);background:#fff;border-top:1px solid #eee}
 
-/* Accessibility helpers */
-.sr-only{position:absolute!important;height:1px;width:1px;overflow:hidden;clip:rect(1px,1px,1px,1px);white-space:nowrap}
-
-/* Responsive */
-@media(min-width:700px){
-  .nav{display:block}
-  .nav-toggle{display:none}
-  .grid{grid-template-columns:repeat(3,1fr)}
-  .gallery-grid{grid-template-columns:repeat(3,1fr)}
+/* Glavna vsebina na sredino in bolj pregledna */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background: rgba(0, 0, 0, 0.4); /* rahlo črno ozadje za boljšo berljivost */
+    border-radius: 10px;
 }
-@media(max-width:699px){
-  .grid{grid-template-columns:1fr}
-  .gallery-grid{grid-template-columns:repeat(2,1fr)}
+
+/* Naslovi bolj vidni */
+h1, h2, h3 {
+    color: white;
+}
+
+/* Tekst in povezave */
+p, a {
+    color: white;
+}
+a {
+    text-decoration: underline;
 }
