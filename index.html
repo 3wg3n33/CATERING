@@ -40,13 +40,23 @@
         <section id="kontakt">
             <h2>Kontakt</h2>
 
-            <form>
-                <input type="text" placeholder="Ime" required>
-                <input type="text" placeholder="Priimek" required>
-                <input type="email" placeholder="Email" required>
-                <textarea placeholder="Sporočilo"></textarea>
-                <button type="submit">Pošlji</button>
-            </form>
+           <form action="https://formsubmit.co/evgen.pirs@gmail.com" method="POST">
+
+    <input type="text" name="Ime" placeholder="Vaše ime" required><br><br>
+
+    <input type="email" name="Email" placeholder="Vaš email" required><br><br>
+
+    <textarea name="Sporocilo" placeholder="Vaše sporočilo" rows="5" required></textarea><br><br>
+
+    <button type="submit">Pošlji</button>
+
+    <!-- Anti-spam -->
+    <input type="hidden" name="_captcha" value="false">
+
+    <!-- Preusmeritev po poslano (lahko izbrišeš, če nočeš) -->
+    <input type="hidden" name="_next" value="https://3wg3n33.github.io/CATERING/">
+</form>
+
 
             <p style="margin-top:20px;">© Ime podjetja — Vse pravice pridržane.</p>
         </section>
@@ -55,6 +65,7 @@
 
 </body>
 </html>
+
 
 
 
