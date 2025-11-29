@@ -25,13 +25,14 @@ body {
 
 /* Naslovi bolj vidni */
 h1, h2, h3 {
-    color: white;
+    color: dark blue;
 }
 
 /* Tekst in povezave */
 p, a {
-    color: white;
+    color: red;
 }
 a {
     text-decoration: underline;
 }
+
